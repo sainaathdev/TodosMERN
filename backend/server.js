@@ -4,8 +4,9 @@ const cors = require("cors");
 const TodoModel = require("./Models/Todo.model");
 
 const app = express();
-app.use(cors());
+
 app.use(express.json());
+app.use(cors());
 
 app.use(cors({
   origin: 'https://66d348c162742642c8af06e4--sage-treacle-178c00.netlify.app', // replace with your frontend URL
