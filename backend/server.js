@@ -10,7 +10,7 @@ app.use(cors());
 
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/test");  //mongoDB compass 
+mongoose.connect("mongodb://0.0.0.0:27017/test");  //mongoDB compass 
 
 app.post("/add", (req, res) => {
   const task = req.body.task;
