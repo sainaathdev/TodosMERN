@@ -1,0 +1,142 @@
+body {
+  background-color: black;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headingEle {
+  font-size: 50px;
+  font-family: sans-serif;
+  color: #f96d00;
+}
+
+.inputF {
+  padding: 18px;
+  width: 450px;
+  outline: none;
+  border-radius: 3px solid black;
+}
+.inputF:hover {
+  border-color: orange;
+}
+
+.emptyHeading {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.plus {
+  color: #ff6f3c;
+  font-size: 15px;
+  text-align: center;
+}
+
+.btn {
+  margin-left: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: black;
+  font-weight: bold;
+  outline: none;
+  margin-bottom: 2px;
+  text-align: center;
+  border-color: #f96d00;
+  border-width: 2px solid;
+}
+.btn:hover {
+  color: black;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  background-color: white;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  font-family: sans-serif;
+  height: 35px;
+  margin: 3px;
+  padding: 2px 5px 2px 5px;
+  border-radius: 10px;
+  font-size: 35px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+  font-size: 20px;
+}
+
+.icon {
+  margin-right: 6px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #f96d00;
+}
+
+.line-through {
+  text-decoration: line-through;
+  text-decoration-color: #7fff00;
+  text-decoration-thickness: 3px;
+}
+
+div {
+  margin: 0px 5px 0px 5px;
+  cursor: pointer;
+}
+
+span {
+  margin: 0px 5px 0px 5px;
+}
+
+@media (min-width: 768px) {
+  .headingEle {
+    font-size: 28px;
+  }
+
+  .inputF {
+    width: 90%;
+  }
+
+  .btn {
+    margin-left: 10px;
+    width: auto;
+  }
+
+  .task {
+    flex-direction: row;
+    font-size: 20px;
+  }
+}
+
+/* Desktop Styles (1024px and up) */
+@media (min-width: 1024px) {
+  .headingEle {
+    font-size: 36px;
+  }
+
+  .inputF {
+    width: 400px;
+  }
+
+  .task {
+    width: 500px;
+    padding: 10px;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
+}
