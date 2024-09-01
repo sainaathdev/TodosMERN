@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("https://todosmern-5.onrender.com/get")
+      .get("https://todosmern-lat-backend.onrender.com/get")
       .then((result) => setTodos(result.data))
       .catch((err) => console.log(err));
   });
@@ -21,7 +21,7 @@ const Home = () => {
   const edithandler = (id) => {
     //editing todos
     axios
-      .put("https://todosmern-5.onrender.com/update/" + id)
+      .put("https://todosmern-lat-backend.onrender.com/update/" + id)
       .then((result) => {
         const updatedTodos = todos.map((todo) =>
           todo._id === id ? { ...todo, done: !todo.done } : todo
@@ -34,7 +34,7 @@ const Home = () => {
   const deleteHandler = (id) => {
     //delete handler
     axios
-      .delete("https://todosmern-5.onrender.com/delete/" + id)
+      .delete("https://todosmern-lat-backend.onrender.com/delete/" + id)
       .then((result) => {
         const updatedTodos = todos.filter((todo) => todo._id !== id);
         setTodos(updatedTodos);

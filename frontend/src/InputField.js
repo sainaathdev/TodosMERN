@@ -9,7 +9,7 @@ const InputField = () => {
 
   useEffect(() => {
     axios
-      .get("https://todosmern-5.onrender.com/tasks")
+      .get("https://todosmern-lat-backend.onrender.com/tasks")
       .then((response) => setTaskList(response.data))
       .catch((err) => console.log(err));
   }, []);
@@ -22,7 +22,7 @@ const InputField = () => {
     }
 
     axios
-      .post("https://todosmern-5.onrender.com/add", { task: task })
+      .post("https://todosmern-lat-backend.onrender.com/add", { task: task })
       .then((response) => {
         setTaskList([...taskList, response.data]);
         setTask("");
