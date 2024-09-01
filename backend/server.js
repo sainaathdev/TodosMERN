@@ -10,7 +10,7 @@ app.use(cors());
 
 
 
-mongoose.connect("mongodb://0.0.0.0:27017/test");  //mongoDB compass 
+mongoose.connect("mongodb+srv://sai-user:sainaath123@cluster0.vqjdp.mongodb.net/");  //mongoDB compass 
 
 app.post("/add", (req, res) => {
   const task = req.body.task;
